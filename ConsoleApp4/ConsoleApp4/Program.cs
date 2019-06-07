@@ -10,19 +10,28 @@ namespace ConsoleApp4
     {
         static void Main(string[] args)
         {
-            int a, b, c = 0;
+            int a, b = 0;
+            double c = 0;
             string znak;
             a = Convert.ToInt32(Console.ReadLine());
             znak = Console.ReadLine();
             b = Convert.ToInt32(Console.ReadLine());
             if (znak == "+")
-                {
-                    c = a + b;
-                }
+            {
+                c = a + b;
+            }
             if (znak == "-")
-                {
-                    c = a - b;
-                }
+            {
+                c = a - b;
+            }
+            if (znak == "*")
+            {
+                c = a * b;
+            }
+            if (znak == "/")
+            {
+                c = a / b;
+            }
             Console.WriteLine(c);
             Console.ReadKey();
         }
